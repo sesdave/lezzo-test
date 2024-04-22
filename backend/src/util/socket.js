@@ -1,4 +1,3 @@
-// socket.js
 const socketIo = require('socket.io');
 
 module.exports = (server) => {

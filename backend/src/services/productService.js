@@ -1,4 +1,3 @@
-// services/productService.js
 const { Product } = require('../models');
 const redisClient = require('../util/redisClient'); 
 const fs = require('fs')
