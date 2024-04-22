@@ -1,0 +1,36 @@
+{
+  "name": "lezzo-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "migration:create": "npx sequelize-cli migration:create",
+    "migrate": "env-cmd npx sequelize-cli db:migrate",
+    "migrate:seed": "npx sequelize-cli db:seed --seed XXXXXXXXXXXXXX-demo-stores.js && npx sequelize-cli db:seed --seed XXXXXXXXXXXXXX-demo-categories.js && npx sequelize-cli db:seed --seed XXXXXXXXXXXXXX-demo-products.js",
+    "migrate:rollback": "env-cmd npx sequelize-cli db:migrate:undo",
+    "test": "jest",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1603.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "formidable": "^3.5.1",
+    "joi": "^17.12.3",
+    "mysql2": "^3.9.6",
+    "nodemon": "^3.1.0",
+    "react-redux": "^9.1.1",
+    "redis": "^4.6.13",
+    "redux": "^5.0.1",
+    "redux-thunk": "^3.1.0",
+    "sequelize": "^6.37.3",
+    "sharp": "^0.33.3",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
